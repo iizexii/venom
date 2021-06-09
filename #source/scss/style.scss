@@ -24,6 +24,9 @@ body {
 			var(--black) url("../../img/bg.png") no-repeat center center / 100%;
 	}
 }
+body * {
+	font-family: var(--f-roboto);
+}
 .fixed {
 	overflow: hidden;
 	width: 100%;
@@ -44,6 +47,7 @@ body {
 	}
 
 	&__date {
+		font-family: var(--f-roboto);
 		font-size: 24px;
 		line-height: 28px;
 		color: var(--white08);
@@ -87,6 +91,7 @@ body {
 	}
 
 	&__description {
+		font-family: var(--f-roboto);
 		display: flex;
 		flex-direction: column;
 		@media (max-width: 820px) {
