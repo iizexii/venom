@@ -106,6 +106,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.nav {
+  z-index: 2;
+}
+
 @media (max-width: 767px) {
   .nav {
     display: -webkit-box;
@@ -425,6 +429,7 @@ body {
   display: flex;
   margin-top: 70px;
   margin-bottom: 50px;
+  z-index: 2;
 }
 
 @media (max-width: 550px) {
