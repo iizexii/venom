@@ -1,0 +1,204 @@
+@import "_reset"; //* подключение файла _reset.scss
+@import "_header"; //* подключение файла _header.scss
+@import "_footer"; //* подключение файла _footer.scss
+:root {
+	--white: #fff;
+	--black: #14131a;
+	--red: #8d0019;
+	--white05: rgba(255, 255, 255, 0.5);
+	--white08: rgba(255, 255, 255, 0.8);
+	--f-roboto: Roboto;
+}
+body {
+	color: var(--white);
+	font-family: var(--f-roboto);
+	background: url("/img/blood.png") no-repeat top right,
+		var(--black) url("/img/bg.png") no-repeat center center / 100%;
+	position: relative;
+	@media (max-width: 1199px) {
+		background: url("/img/blood.png") no-repeat top right / 75%,
+			var(--black) url("/img/bg.png") no-repeat center center / 100%;
+	}
+	@media (max-width: 820px) {
+		background: url("/img/blood.png") no-repeat top 40% right / 75%,
+			var(--black) url("/img/bg.png") no-repeat center center / 100%;
+	}
+}
+.fixed {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.container {
+	max-width: 1140px;
+	margin: auto;
+	@media (max-width: 1199px) {
+		padding: 0 40px;
+	}
+}
+.film {
+	position: relative;
+	@media (max-width: 820px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__date {
+		font-size: 24px;
+		line-height: 28px;
+		color: var(--white08);
+		margin-bottom: 38px;
+		@media (max-width: 1199px) {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		@media (max-width: 820px) {
+			font-size: 24px;
+			line-height: 28px;
+		}
+		@media (max-width: 420px) {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	&__name {
+		margin-bottom: 41px;
+		@media (max-width: 1199px) {
+			margin-top: 30px;
+			margin-bottom: 60px;
+		}
+	}
+
+	&__name-img {
+		@media (max-width: 1350px) {
+			height: 180px;
+		}
+		@media (max-width: 1199px) {
+			height: 160px;
+		}
+		@media (max-width: 991px) {
+			height: 140px;
+		}
+		@media (max-width: 820px) {
+			height: 120px;
+			max-width: 70%;
+		}
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		@media (max-width: 820px) {
+			max-width: 60%;
+		}
+		@media (max-width: 550px) {
+			max-width: 100%;
+		}
+	}
+
+	&__description-text {
+		font-size: 16px;
+		line-height: 22px;
+		color: var(--white08);
+		z-index: 1;
+		@media (max-width: 1199px) {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		@media (max-width: 820px) {
+			font-size: 16px;
+			line-height: 22px;
+		}
+		@media (max-width: 420px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__button-group {
+		display: flex;
+		margin-top: 70px;
+		margin-bottom: 50px;
+
+		@media (max-width: 550px) {
+			flex-direction: column;
+		}
+	}
+
+	&__button {
+		&_white {
+			background: var(--white);
+			border-radius: 5px;
+			color: var(--red);
+		}
+
+		&_transparent {
+			background-color: transparent;
+			color: var(--white);
+		}
+	}
+}
+
+.button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	border: none;
+	text-decoration: none;
+
+	&__img {
+		margin-right: 10px;
+		width: 15px;
+		@media (max-width: 1199px) {
+			width: 18px;
+		}
+		@media (max-width: 820px) {
+			width: 16px;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		@media (max-width: 1199px) {
+			font-size: 18px;
+		}
+		@media (max-width: 820px) {
+			font-size: 16px;
+		}
+		@media (max-width: 420px) {
+			font-size: 14px;
+		}
+	}
+}
+
+.venom-img-container {
+	&__img-head {
+		position: absolute;
+		display: flex;
+		right: 0;
+		top: 0;
+		@media (max-width: 820px) {
+			align-items: center;
+			bottom: 0;
+		}
+	}
+	&__image-item {
+		@media (max-width: 1350px) {
+			width: 90%;
+			margin-left: auto;
+		}
+		@media (max-width: 1199px) {
+			width: 80%;
+		}
+		@media (max-width: 991px) {
+			width: 70%;
+		}
+		@media (max-width: 820px) {
+			width: 60%;
+			filter: brightness(0.6);
+		}
+	}
+}
