@@ -1,8 +1,8 @@
 // document.addEventListener('DOMContentLoaded', () => {
 // });
 $(document).ready(() => {
-	$("body #header").load("/header.html");
-	$("body #footer").load("/footer.html");
+	$("body #header").load("header.html");
+	$("body #footer").load("footer.html");
 
 	$(document).on('click', '.nav__mobile', function () {
 		let navBtn = $('.nav__mobile');
