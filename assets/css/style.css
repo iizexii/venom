@@ -412,8 +412,8 @@ body {
 
 @media (max-width: 420px) {
   .film__description-text {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -494,12 +494,6 @@ body {
 @media (max-width: 820px) {
   .button__text {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 420px) {
-  .button__text {
-    font-size: 14px;
   }
 }
 
