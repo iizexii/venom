@@ -19,7 +19,6 @@ $(document).ready(() => {
 	})
 });
 $(window).on('resize', function () {
-	console.log('asdadssdasdasd');
 	$('body').removeClass('fixed');
 	$('.nav__list').removeClass('nav__list_active');
 	$('.nav__mobile').removeClass('nav__mobile_active');
