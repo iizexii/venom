@@ -270,10 +270,6 @@ body {
   }
 }
 
-body * {
-  font-family: var(--f-roboto);
-}
-
 .fixed {
   overflow: hidden;
   width: 100%;
